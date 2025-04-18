@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351688714191",
+    "project_id": "yegitektodo",
+    "storage_bucket": "yegitektodo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351688714191:android:67358bdb878457bad4d4ba",
+        "android_client_info": {
+          "package_name": "com.yegitek_todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYEPV7Rch4UlZA8nIKqi_nSXo4aoHcerw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
