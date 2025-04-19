@@ -3,6 +3,7 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:yegitek_todo/env/env.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -49,20 +50,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBYEPV7Rch4UlZA8nIKqi_nSXo4aoHcerw',
-    appId: '1:351688714191:android:67358bdb878457bad4d4ba',
-    messagingSenderId: '351688714191',
-    projectId: 'yegitektodo',
-    storageBucket: 'yegitektodo.firebasestorage.app',
+  static FirebaseOptions get android => FirebaseOptions(
+    apiKey: Env.apiKey,
+    appId: Env.appId,
+    messagingSenderId: Env.messagingSenderId,
+    projectId: Env.projectId,
+    storageBucket: Env.storageBucket,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCdEC-O0vNChpq0vgW_IIjoRo492HLltGw',
-    appId: '1:351688714191:ios:93a8579c31112dc4d4d4ba',
-    messagingSenderId: '351688714191',
-    projectId: 'yegitektodo',
-    storageBucket: 'yegitektodo.firebasestorage.app',
+  static FirebaseOptions get ios => FirebaseOptions(
+    apiKey: Env.apiKey,
+    appId: Env.appId,
+    messagingSenderId: Env.messagingSenderId,
+    projectId: Env.projectId,
+    storageBucket: Env.storageBucket,
     iosBundleId: 'com.yegitekTodo',
   );
 }

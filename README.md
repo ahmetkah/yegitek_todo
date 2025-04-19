@@ -1,16 +1,26 @@
-# yegitek_todo
+# Yegitek Todo
 
-A new Flutter project.
+Yegitek Todo projesi
 
-## Getting Started
+## Kurulum
 
-This project is a starting point for a Flutter application.
+### Ortam Değişkenleri
 
-A few resources to get you started if this is your first Flutter project:
+Bu proje Firebase kullanıyor ve API anahtarları için envied kullanılıyor. Projeyi çalıştırmak için:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. `.env.example` dosyasını kopyalayıp `.env` adıyla kaydedin:
+   ```
+   cp .env.example .env
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. `.env` dosyasını gerçek Firebase yapılandırma değerlerinizle güncelleyin.
+
+3. Envied kodlarını oluşturmak için aşağıdaki komutu çalıştırın:
+   ```
+   flutter pub run build_runner build
+   ```
+
+4. Artık projeyi çalıştırabilirsiniz:
+   ```
+   flutter run
+   ```
